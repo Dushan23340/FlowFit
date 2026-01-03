@@ -50,11 +50,8 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">
-                    Your Name
-                  </label>
                   <Input
-                    placeholder="Jane Doe"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -64,12 +61,9 @@ const ContactSection = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">
-                    Email Address
-                  </label>
                   <Input
                     type="email"
-                    placeholder="jane@example.com"
+                    placeholder="Email Address"
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -82,12 +76,9 @@ const ContactSection = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">
-                    Phone Number
-                  </label>
                   <Input
                     type="tel"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
@@ -96,9 +87,6 @@ const ContactSection = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">
-                    Interested In
-                  </label>
                   <Select
                     value={formData.package}
                     onValueChange={(value) =>
@@ -106,7 +94,7 @@ const ContactSection = () => {
                     }
                   >
                     <SelectTrigger className="bg-background border-border">
-                      <SelectValue placeholder="Select a package" />
+                      <SelectValue placeholder="Interested In" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="starter">Starter Plan</SelectItem>
@@ -121,11 +109,8 @@ const ContactSection = () => {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground">
-                  Your Message
-                </label>
                 <Textarea
-                  placeholder="Tell us about your goals and what you're looking to achieve..."
+                  placeholder="Your Message"
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })

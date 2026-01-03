@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# FlowFit Studio Landing Page
 
 ## Project info
 
